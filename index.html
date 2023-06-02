@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DGRM - Flowchart editor</title>
+    <link rel="icon" type="image/png"
+          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAN5JREFUSEvNlc0RgyAQRtk2xEsqyaQEtYCYyoIFxFpSQg6BczrYDEZn+BdXnAk3D7zHt6wLsIMXHMxn/y+oRiUYwzMANrKpn25FdiWY4dcZ+gHAiyshC/jj3SPA3TmxJyELNNhJsLhequWn5WOzYIIiour4LSyBQbVVTxJYJ0YmfIkN15LsBMFyGBJ9J7KrBamLIrX+sQxJ6KddTZCET0S/LKYoKdgLT95BCXhUUAoeFJSEe4LS8IBAYvx9SHdLbJ/VRdUYE9DgmQno8AzBPvimWUR9u1dHBRVMGtcU2RcViIEZF5cYswAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+          content="Online editor for creating flowcharts. Fast, no unnecessary buttons." />
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navigation">
+            <div class="lang-switcher">
+                <input type="checkbox" id="lang-switcher-checkbox">
+                <label class="lang-select" for="lang-switcher-checkbox">EN <span class="dropdown-arrow"></span></label>
+                <ul class="lang-list">
+                    <li><a href="" class="lang-item current">EN</a></li>
+                    <li><a href="ru/index.html" class="lang-item">RU</a></li>
+                </ul>
+            </div>
+            <a href="https://app.dgrm.net/" class="btn btn_primary">Open flowchart</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <h1 class="visually-hidden" id="hero">DGRM - Flowchart editor</h1>
+    <section class="hero section">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="h1">
+                    Flowchart editor
+                </h2>
+                <p class="description">Online editor for creating flowcharts. <br>
+                    Fast, no unnecessary buttons.</p>
+                <a href="https://app.dgrm.net/" class="btn btn_primary">Open flowchart</a>
+                <p class="description-free">Free. No registration required.</p>
+            </div>
+            <div class="hero__images">
+                <figure class="relative hero__img-mb-block">
+                    <picture>
+                        <source srcset="img/section-1/hero-mb.webp, img/section-1/hero-mb-x2.webp 2x, img/section-1/hero-mb-x3.webp 3x"
+                                type="image/webp">
+                        <img class="hero__img-mb" src="img/section-1/hero-mb.jpg" alt="">
+                    </picture>
+                    <figcaption class="mt-3">
+                        <a href="https://app.dgrm.net/?k=2023045a122305" target="_blank"
+                           class="link"><span>Open flowchart</span></a>
+                    </figcaption>
+                </figure>
+                <figure class="relative">
+                    <picture>
+                        <source srcset="img/section-1/hero-pc.webp 1x, img/section-1/hero-pc-x2.webp 2x, img/section-1/hero-pc-x3.webp 3x"
+                                type="image/webp">
+                        <img class="hero__img-pc" src="img/section-1/hero-pc.jpg" alt="">
+                    </picture>
+                    <figcaption class="hero__img-pc-caption">
+                        <a href="https://app.dgrm.net/?k=202303a55a0c90" target="_blank"
+                           class="link"><span>Open flowchart</span></a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="popular-scheme container">
+        <h2 class="h2" id="extended-scheme-support">Supports popular flowcharts</h2>
+        <div class="popular-scheme__content">
+            <p class="popular-scheme__description description">Workflow charts, activity diagrams, sequence diagrams, knowledge maps.</p>
+            <div class="popular-scheme__images">
+                <figure class="relative">
+                    <figcaption class="popular-scheme__img-1-caption">
+                        <a href="https://app.dgrm.net/?k=202302ba45529b" class="link"
+                           target="_blank"><span>Open flowchart</span></a>
+                    </figcaption>
+                    <picture>
+                        <source srcset="img/section-2/scheme-1.webp 1x, img/section-2/scheme-1-x2.webp 2x, img/section-2/scheme-1-x3.webp 3x"
+                                type="image/webp">
+                        <img src="img/section-2/scheme-1.jpg" alt="" class="popular-scheme__img-1">
+                    </picture>
+                </figure>
+                <figure class="relative">
+                    <figcaption class="popular-scheme__img-2-caption">
+                        <a href="https://app.dgrm.net/?k=2023040e8fdca8" class="link"
+                           target="_blank"><span>Open flowchart</span></a>
+                    </figcaption>
+                    <picture>
+                        <source srcset="img/section-2/scheme-2.webp 1x, img/section-2/scheme-2-x2.webp 2x, img/section-2/scheme-2-x3.webp 3x"
+                                type="image/webp">
+                        <img src="img/section-2/scheme-2.jpg" alt="" class="popular-scheme__img-2">
+                    </picture>
+                </figure>
+                <figure class="relative popular-scheme__img-3-block">
+                    <figcaption class="popular-scheme__img-3-caption">
+                        <a href="https://app.dgrm.net/?k=2023045a122305" class="link"
+                           target="_blank"><span>Open flowchart</span></a>
+                    </figcaption>
+                    <picture>
+                        <source srcset="img/section-2/scheme-3.webp 1x, img/section-2/scheme-3-x2.webp 2x, img/section-2/scheme-3-x3.webp 3x"
+                                type="image/webp">
+                        <img src="img/section-2/scheme-3.jpg" alt="" class="popular-scheme__img-3">
+                    </picture>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h2 class="h2" id="features">Features</h2>
+        <ul class="features">
+            <li class="btnless">
+                <picture>
+                    <source srcset="img/section-3/btnless.webp 1x, img/section-3/btnless-x2.webp 2x, img/section-3/btnless-x3.webp 3x"
+                            type="image/webp">
+                    <img class="btnless__img" src="img/section-3/btnless.jpeg" alt="">
+                </picture>
+                <ul class="btnless__content">
+                    <li>
+                        <div class="section">
+                            <h3 class="h3" id="no-extra-buttons">No unnecessary buttons</h3>
+                            <p class="description">Suitable for everyone. Draws by cell. No crooked elements as they align themselves with the grid.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section">
+                            <h3 class="h3" id="cross-platform">Works on phones, tablets and PCs</h3>
+                            <p class="description">No installation. Works from the browser.</p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="save-to-image">
+                <div class="save-to-image__section">
+                    <h3 class="h3" id="partial-export">Download parts of the flowchart</h3>
+                    <picture>
+                        <source srcset="img/section-4/save-to-image.webp 1x, img/section-4/save-to-image-x2.webp 2x, img/section-4/save-to-image-x3.webp 3x"
+                                type="image/webp">
+                        <img class="save-to-image__img" src="img/section-4/save-to-image.jpeg" alt="" loading="lazy">
+                    </picture>
+                </div>
+            </li>
+            <li class="links">
+                <div class="links__section">
+
+                    <h3 class="h3" id="links-to-schemes">Links to the flowchart</h3>
+                    <div class="description">
+                        Send links to the flowchart to your colleagues.
+                    </div>
+
+                    <picture>
+                        <source srcset="img/section-4/links.webp 1x, img/section-4/links-x2.webp 2x, img/section-4/links-x3.webp 3x"
+                                type="image/webp">
+                        <img class="links__img" src="img/section-4/links.jpeg" alt="" loading="lazy">
+                    </picture>
+                </div>
+            </li>
+            <li class="copy-to-word">
+                <div>
+                    <h3 class="h3" id="copy-as-image">Copy into Word</h3>
+                    <p class="copy-to-word__description description">Insert diagrams directly into Word and Google Docs without intermediate saving of pictures.</p>
+                    <picture>
+                        <source srcset="img/section-5/coping-src.webp 1x, img/section-5/coping-src-x2.webp 2x, img/section-5/coping-src-x3.webp 3x"
+                                type="image/webp">
+                        <img class="copy-to-word__img-src" src="img/section-5/coping-src.jpeg" alt="" loading="lazy">
+                    </picture>
+                    <img class="copy-to-word__img-arrow" src="img/arrow.svg" alt="">
+                    <picture>
+                        <source srcset="img/section-5/coping-dest.webp 1x, img/section-5/coping-dest-x2.webp 2x, img/section-5/coping-dest-x3.webp 3x"
+                                type="image/webp">
+                        <img class="copy-to-word__img-dest" src="img/section-5/coping-dest.jpeg" alt=""
+                             loading="lazy">
+                    </picture>
+                </div>
+            </li>
+            <li class="through-the-picture">
+                <div class="through-the-picture__content">
+                    <h3 class="h3" id="upload-via-picture">Open flowcharts from pictures</h3>
+
+                    <p class="through-the-picture__description description">No need to keep the source. Example: if we send a flowchart over e-mail and receive a reply a month later, we can immediately edit the picture from the letter, no need for the source.
+                    </p>
+
+                    <picture>
+                        <source srcset="img/section-6/open-src.webp 1x, img/section-6/open-src-x2.webp 2x, img/section-6/open-src-x3.webp 3x"
+                                type="image/webp">
+                        <img class="through-the-picture__img-src" src="img/section-6/open-src.jpeg" alt=""
+                             loading="lazy">
+                    </picture>
+                    <img class="through-the-picture__img-arrow" src="img/arrow.svg" alt="">
+                    <picture>
+                        <source srcset="img/section-6/open-content.webp 1x, img/section-6/open-content-x2.webp 2x, img/section-6/open-content-x3.webp 3x"
+                                type="image/webp">
+                        <img class="through-the-picture__img-content" src="img/section-6/open-content.jpeg" alt=""
+                             loading="lazy">
+                    </picture>
+                    <picture>
+                        <source srcset="img/section-6/open-dest.webp 1x, img/section-6/open-dest-x2.webp 2x, img/section-6/open-dest-x3.webp 3x"
+                                type="image/webp">
+                        <img class="through-the-picture__img-dest" src="img/section-6/open-dest.jpeg" alt=""
+                             loading="lazy">
+                    </picture>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="promo">
+        <div class="promo-content">
+            <h3 class="promo-heading" id="totally-free">
+                <strong>Free, <br />no registration required</strong>
+            </h3>
+
+            <p class="promo__description description">Start using editor free and without registering.</p>
+            <div class="promo__action">
+                <a href="https://app.dgrm.net/" class="btn btn_primary promo-btn">Open editor</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <p class="footer-heading">Editor is developing</p>
+        <p class="footer-description">New features are being implemented.
+            Announcements are posted on Twitter and Telegram.</p>
+        <ul>
+            <li class="footer-contact">
+                <a class="footer-contact__link" href="https://t.me/dgrm_net">
+                    <svg class="footer-contact__icon" height="40" width="40">
+                        <use xlink:href="../img/icons.svg#telegram"></use>
+                    </svg>
+                    <span>https://t.me/dgrm_net</span>
+                </a>
+            </li>
+            <li class="footer-contact">
+                <a class="footer-contact__link" href="https://twitter.com/boyko_tech">
+                    <svg class="footer-contact__icon" height="40" width="40">
+                        <use xlink:href="../img/icons.svg#twitter"></use>
+                    </svg>
+                    <span>https://twitter.com/boyko_tech</span>
+                </a>
+            </li>
+            <li class="footer-contact">
+                <a class="footer-contact__link" href="mailto:contact@dgrm.net">
+                    <svg class="footer-contact__icon" height="40" width="40">
+                        <use xlink:href="../img/icons.svg#email"></use>
+                    </svg>
+                    <span>contact@dgrm.net</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
