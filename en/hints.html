@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DGRM - Flowchart editor</title>
+    <link rel="icon" type="image/png"
+          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAN5JREFUSEvNlc0RgyAQRtk2xEsqyaQEtYCYyoIFxFpSQg6BczrYDEZn+BdXnAk3D7zHt6wLsIMXHMxn/y+oRiUYwzMANrKpn25FdiWY4dcZ+gHAiyshC/jj3SPA3TmxJyELNNhJsLhequWn5WOzYIIiour4LSyBQbVVTxJYJ0YmfIkN15LsBMFyGBJ9J7KrBamLIrX+sQxJ6KddTZCET0S/LKYoKdgLT95BCXhUUAoeFJSEe4LS8IBAYvx9SHdLbJ/VRdUYE9DgmQno8AzBPvimWUR9u1dHBRVMGtcU2RcViIEZF5cYswAAAABJRU5ErkJggg==">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="alternate" hreflang="ru" href="../ru/"/>
+    <link rel="alternate" hreflang="x-default" href="../en/"/>
+    <meta name="description"
+          content="Flowchart editor. Fast, no unnecessary buttons. Supports workflow charts, activity diagrams, sequence diagrams, mind maps."/>
+</head>
+<body>
+<img src="https://mc.yandex.ru/watch/94193297" style="position:absolute; left:-9999px;" alt="metric"/>
+<header>
+    <div class="container">
+        <nav class="navigation">
+            <a href="index.html" class="link link_without-arrow me-auto"><span>Flowchart editor</span></a>
+            <div class="lang-switcher">
+                <input type="checkbox" id="lang-switcher-checkbox">
+                <label class="lang-select" for="lang-switcher-checkbox">EN <span class="dropdown-arrow"></span></label>
+                <ul class="lang-list">
+                    <li><a href="../ru/hints.html" class="lang-item">RU</a></li>
+                    <li><a href="" class="lang-item current">EN</a></li>
+                </ul>
+            </div>
+            <a href="https://app.dgrm.net/" class="btn btn_primary" data-floating-btn>Открыть редактор</a>
+        </nav>
+    </div>
+</header>
+<main class="bg-solid">
+    <div class="container">
+
+        <h1 class="tips__page-header">Hints</h1>
+
+        <ul>
+            <li class="tips">
+                <section class="tips__container tips__container_center" id="connect-shapes">
+                    <div class="tips__content">
+                        <h2 class="tips__heading">How to add and connect shapes</h2>
+                        <div class="tips__description">Drag shapes from the menu. Activate the shape with a click. Pull
+                            out the arrow.
+                        </div>
+                    </div>
+                    <div class="tips__content tips__frame">
+                        <div class="tips__frame-landscape">
+                            <video autoplay loop muted playsinline poster="../img/posters/1-add-connect-poster.webp">
+                                <source src="../videos/webm/1-add-connect.webm" type="video/webm">
+                                <source src="../videos/mp4/1-add-connect.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="tips">
+                <section class="tips__container" id="edit-shapes">
+                    <div class="tips__content">
+                        <h2 class="tips__heading">How to edit shapes</h2>
+                        <div class="tips__description">The first click activates the shape, the second click opens the
+                            settings.
+                        </div>
+                    </div>
+                    <div class="tips__content tips__content_centered-x">
+                        <div class="tips__frame tips__frame-portrait">
+                            <video autoplay loop muted playsinline poster="../img/posters/2-edit-poster.webp">
+                                <source src="../videos/webm/2-edit.webm" type="video/webm">
+                                <source src="../videos/mp4/2-edit.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="tips">
+                <section id="select-multiple-shapes">
+                    <h2 class="tips__heading">How to select multiple shapes</h2>
+                    <div class="tips__container">
+                        <div class="tips__content">
+                            <div class="tips__description mb-3">On a PC, use the right mouse button.</div>
+                            <div class="tips__frame tips__frame-landscape">
+                                <video autoplay loop muted playsinline poster="../img/posters/3-grp-select-poster.webp">
+                                    <source src="../videos/webm/3-grp-select.webm" type="video/webm">
+                                    <source src="../videos/mp4/3-grp-select.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="tips__content tips__content_centered-x  mb:mt-2">
+                            <div class="tips__description mb-3">On phone: long press.</div>
+                            <div class="tips__frame tips__frame-portrait">
+                                <video autoplay loop muted playsinline
+                                       poster="../img/posters/3-grp-select-mob-poster.webp">
+                                    <source src="../videos/webm/3-grp-select-mob.webm" type="video/webm">
+                                    <source src="../videos/mp4/3-grp-select-mob.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="tips">
+                <section class="tips__container">
+                    <div class="tips__content">
+                        <h2 class="tips__heading tips__heading_side-top">Selecting multiple shapes <br> by holding Shift
+                        </h2>
+                    </div>
+                    <div class="tips__content tips__frame">
+                        <div class="tips__frame-landscape">
+                            <video autoplay loop muted playsinline poster="../img/posters/4-select-shift-poster.webp">
+                                <source src="../videos/webm/4-select-shift.webm" type="video/webm">
+                                <source src="../videos/mp4/4-select-shift.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="tips">
+                <section class="tips__content" id="hotkeys">
+                    <h2 class="tips__heading">Hotkeys</h2>
+                    <p class="tips__description">
+                        <b>Ctrl+C</b>, <b>Ctrl+V</b>, <b>Ctrl+X</b> - copy, paste, cut <br>
+                        <b>Ctrl+Z</b>, <b>Ctrl+Y</b> - undo, redo <br>
+                        <b>Del</b>, <b>Backspace</b> - delete selected shapes <br>
+                        <b>Shift + mouse click on figure</b> - select multiple shapes
+                    </p>
+                </section>
+            </li>
+
+            <li class="tips">
+                <section class="tips__container" id="copy-to-word">
+                    <div class="tips__content">
+                        <h2 class="tips__heading tips__heading_side-top">Can be copied to Word</h2>
+                    </div>
+                    <div class="tips__content tips__frame">
+                        <div class="tips__frame-landscape">
+                            <video autoplay loop muted playsinline poster="../img/posters/5-copy-to-word-poster.webp">
+                                <source src="../videos/webm/5-copy-to-word.webm" type="video/webm">
+                                <source src="../videos/mp4/5-copy-to-word.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+            </li>
+
+            <li class="tips">
+                <section class="tips__container" id="diagram-into-the-editor">
+                    <div class="tips__content">
+                        <h2 class="tips__heading tips__heading_side-top">You can drag the diagram into the editor and
+                            open</h2>
+                    </div>
+                    <div class="tips__content tips__frame">
+                        <div class="tips__frame-landscape">
+                            <video autoplay loop muted playsinline poster="../img/posters/6-drag-to-open-poster.webp">
+                                <source src="../videos/webm/6-drag-to-open.webm" type="video/webm">
+                                <source src="../videos/mp4/6-drag-to-open.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer class="footer container">
+    <div>
+        <h4 class="footer-heading">Instructions</h4>
+
+        <a href="hints.html" class="link link_without-arrow text-nowrap"><span>Video hints, hotkeys</span></a>
+    </div>
+    <div>
+        <p class="footer-heading">Editor is developing</p>
+        <p class="footer-description">New features are being implemented. <br>
+            Announcements are posted on Twitter and Telegram.</p>
+        <ul>
+            <li class="footer-contact">
+                <a class="footer-contact__link" href="https://t.me/dgrm_net">
+                    <svg class="footer-contact__icon" height="40" width="40">
+                        <use xlink:href="../img/icons.svg#telegram"></use>
+                    </svg>
+                    <span>https://t.me/dgrm_net</span>
+                </a>
+            </li>
+            <li class="footer-contact">
+                <a class="footer-contact__link" href="https://twitter.com/boyko_tech">
+                    <svg class="footer-contact__icon" height="40" width="40">
+                        <use xlink:href="../img/icons.svg#twitter"></use>
+                    </svg>
+                    <span>https://twitter.com/boyko_tech</span>
+                </a>
+            </li>
+            <li class="footer-contact">
+                <a class="footer-contact__link" href="mailto:contact@dgrm.net">
+                    <svg class="footer-contact__icon" height="40" width="40">
+                        <use xlink:href="../img/icons.svg#email"></use>
+                    </svg>
+                    <span>contact@dgrm.net</span>
+                </a>
+            </li>
+            <li class="footer-contact">
+                <a class="footer-contact__link" href="https://github.com/AlexeyBoiko/DgrmJS">
+                    <svg class="footer-contact__icon" height="40" width="40">
+                        <use xlink:href="../img/icons.svg?v=20230704#github"></use>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
