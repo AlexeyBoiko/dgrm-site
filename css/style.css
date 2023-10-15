@@ -1544,3 +1544,6 @@ img {
 .footer-contact__link:focus-visible {
     text-decoration: underline;
 }
+
+.logo { display: flex; align-items: center; }
+.logo svg { margin-right: 0.25rem; }
