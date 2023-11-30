@@ -946,7 +946,7 @@ img {
 }
 
 .popular-scheme__content_second {
-    margin-block-start: var(--indent-2);
+    margin-block-start: var(--indent-3);
     padding-block-end: 33rem;
 }
 
