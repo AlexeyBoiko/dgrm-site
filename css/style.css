@@ -638,7 +638,8 @@ header {
     text-decoration-color: #6ea0f6;
     -webkit-text-decoration-color: #6ea0f6;
 }
-
+.link-txtcolor span { color: var(--text-color); }
+.link-txtcolor:hover span { text-decoration-color: var(--text-color); }
 .link::after {
     display: inline-block;
     content: '➞';
@@ -1544,6 +1545,82 @@ img {
 .footer-contact__link:focus-visible {
     text-decoration: underline;
 }
+.legal {
+    font-size: var(--text-size-7);
+    margin-top: var(--indent-2);
+}
+.legal a { color: var(--text-color); text-decoration-style: dotted; text-underline-offset:0.2rem; }
 
 .logo { display: flex; align-items: center; }
 .logo svg { margin-right: 0.25rem; }
+
+/* price */
+.prices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--indent-3);
+    font-size: var(--text-size-5);
+}
+
+.price {
+    background-color: #0D6EFD;
+    /* width: 22rem; */
+    background-color: var(--main-bg-color);
+    padding: var(--indent-3);
+    border-radius: var(--border-radius-img);
+    text-align: left;
+}
+.price-main .h1 { margin-block-end: var(--indent-2); }
+.price p {margin-top: 0;}
+.price-head {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.price-descr { background-color: rgb(251, 251, 251); padding-bottom: var(--indent-1); }
+.price-descr h2 { 
+    margin: 0;
+    padding: var(--indent-1) 0 var(--indent-1);
+}
+.price-price {
+    font-size: var(--text-size-4);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+.price-price span { font-size: var(--text-size-5); }
+.price .btn { width: 100%; margin-bottom: 1.5rem; }
+.price ul {
+    list-style-type: unset;
+    list-style-position: inside;
+}
+.price ul li {
+    margin-bottom: 0.3rem;
+}
+.cloud {
+    display: grid;
+    grid-gap: var(--indent-3);
+    grid-template-columns: 1fr 1fr;
+}
+.cloud .section .description {
+    margin-block-end: var(--indent-2);
+}
+
+.cloud-store-img {
+    width: 40rem;
+}
+
+@media (max-width: 470px) {
+    .price {
+        width: 100%;
+        margin-left: var(--indent-3);
+        margin-right: var(--indent-3);
+    }
+    .price .btn {
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .cloud { display: unset; }
+    .cloud-store-img { width: 100%; margin-top: var(--indent-2); }
+}

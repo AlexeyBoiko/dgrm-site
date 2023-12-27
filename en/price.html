@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DGRM - Flowchart editor</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css?v=20231015">
+    <link rel="alternate" hreflang="ru" href="../ru/price.html" />
+    <link rel="alternate" hreflang="x-default" href="../en/price.html" />
+    <meta name="description"
+          content="Flowchart editor. Fast, no unnecessary buttons. Supports workflow charts, activity diagrams, sequence diagrams, mind maps." />
+</head>
+<body>
+	<img src="https://mc.yandex.ru/watch/94193297" style="position:absolute; left:-9999px;" alt="metric" />
+	<header>
+		<div class="container">
+			<nav class="navigation">
+				<a href="./" class="link link_without-arrow me-auto"><span class="logo"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12.8995 6.85431L17.1421 11.0969L7.24264 20.9964H3V16.7538L12.8995 6.85431ZM14.3137 5.44009L16.435 3.31877C16.8256 2.92825 17.4587 2.92825 17.8492 3.31877L20.6777 6.1472C21.0682 6.53772 21.0682 7.17089 20.6777 7.56141L18.5563 9.68273L14.3137 5.44009Z" fill="rgba(13,110,253,1)"></path></svg>DGRM</span></a>
+				<a href="./price.html" class="link link_without-arrow link-txtcolor"><span>Prices</span></a>
+				<div class="lang-switcher">
+					<input type="checkbox" id="lang-switcher-checkbox">
+					<label class="lang-select" for="lang-switcher-checkbox">EN <span class="dropdown-arrow"></span></label>
+					<ul class="lang-list">
+						<li><a href="" class="lang-item current">EN</a></li>
+						<li><a href="../ru/price.html" class="lang-item">RU</a></li>
+					</ul>
+				</div>
+				<a href="https://app.dgrm.net/" class="btn btn_primary" data-floating-btn>Open editor</a>
+			</nav>
+		</div>
+	</header>
+	<main class="price-main">
+		<h1 class="visually-hidden" id="hero">Prices</h1>
+		<section class="hero section">
+			<div class="hero-content">
+                <h2 class="h1">
+                    Prices
+                </h2>
+				<div class="prices">
+					<div class="price">
+						<p class="price-head">Without a cloud</p>
+						<p class="price-price">Free</p>
+						<a href="https://app.dgrm.net/" class="btn btn_primary" data-floating-btn>Open editor</a>
+						<ul>
+							<li>All editor functions</li>
+							<li>Live collaboration</li>
+						</ul>
+					</div>
+					<div class="price">
+						<p class="price-head">Cloud storage</p>
+						<p class="price-price">270 ₽ <span>per month</span></p>
+						<a href="javascript:alert('Now all features are free.');" class="btn btn_primary" data-floating-btn>Buy subscription</a>
+						<ul>
+							<li>All editor functions</li>
+							<li>Live collaboration</li>
+							<li>Cloud storage</li>
+							<li>Links to schemes</li>
+							<li>Schemes permissions</li>
+						</ul>
+					</div>
+				</div>
+            </div>
+		</section>
+		<section class="price-descr">
+			<div class="container">
+				<h2 class="h2">What does cloud storage provide?</h2>
+				<div class="cloud">
+					<div>
+						<div class="section">
+							<h3 class="h3">Links to schemes</h3>
+							<p class="description">
+								Anyone you send a link to can join. No registration required.
+							</p>
+						</div>
+						<div class="section">
+							<h3 class="h3">Schemes permissions</h3>
+							<p class="description">
+								You can give viewing and editing rights.
+							</p>
+						</div>
+						<div class="section">
+							<h3 class="h3">Your files are always with you</h3>
+							<p class="description">
+								At work and at home, on any device.
+							</p>
+						</div>
+					</div>
+					<div>
+						<img class="cloud-store-img" src="../img/cloud.svg" alt="cloud storage and schema permissions" />
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer container">
+		<div>
+			<h4 class="footer-heading">Instructions</h4>
+	
+			<a href="hints.html" class="link link_without-arrow text-nowrap"><span>Video hints, hotkeys</span></a>
+		</div>
+		<div>
+			<p class="footer-heading">Editor is developing</p>
+			<p class="footer-description">New features are being implemented. <br>
+				Announcements are posted on Twitter and Telegram.</p>
+			<ul>
+				<li class="footer-contact">
+					<a class="footer-contact__link" href="https://t.me/dgrm_net">
+						<svg class="footer-contact__icon" height="40" width="40">
+							<use xlink:href="../img/icons.svg#telegram"></use>
+						</svg>
+						<span>https://t.me/dgrm_net</span>
+					</a>
+				</li>
+				<li class="footer-contact">
+					<a class="footer-contact__link" href="https://twitter.com/boyko_tech">
+						<svg class="footer-contact__icon" height="40" width="40">
+							<use xlink:href="../img/icons.svg#twitter"></use>
+						</svg>
+						<span>https://twitter.com/boyko_tech</span>
+					</a>
+				</li>
+				<li class="footer-contact">
+					<a class="footer-contact__link" href="mailto:contact@dgrm.net">
+						<svg class="footer-contact__icon" height="40" width="40">
+							<use xlink:href="../img/icons.svg#email"></use>
+						</svg>
+						<span>contact@dgrm.net</span>
+					</a>
+				</li>
+				<li class="footer-contact">
+					<a class="footer-contact__link" href="https://github.com/AlexeyBoiko/DgrmJS">
+						<svg class="footer-contact__icon" height="40" width="40">
+							<use xlink:href="../img/icons.svg?v=20230704#github"></use>
+						</svg>
+						<span>GitHub</span>
+					</a>
+				</li>
+			</ul>
+			<p class="legal">TIN 500110586920 Boyko A. S. <br /><a href="../ru/terms-of-use.pdf" target="_blank">Terms of use</a>.</p>
+		</div>
+	</footer>
+</body>
+</html>
