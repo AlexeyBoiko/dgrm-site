@@ -1546,8 +1546,9 @@ img {
     text-decoration: underline;
 }
 .legal {
-    font-size: var(--text-size-7);
+    font-size: var(--text-size-6);
     margin-top: var(--indent-2);
+    margin-block-end: var(--indent-2);
 }
 .legal a { color: var(--text-color); text-decoration-style: dotted; text-underline-offset:0.2rem; }
 
@@ -1607,7 +1608,6 @@ img {
 
 .cloud-store-img {
     width: 40rem;
-    transform: translate3d(0,0,0);
 }
 
 @media (max-width: 470px) {
@@ -1623,5 +1623,6 @@ img {
 
 @media (max-width: 590px) {
     .cloud { display: unset; }
-    .cloud-store-img { width: 100%; margin-top: var(--indent-2); }
+    .cloud-store-img-block { overflow: hidden; }
+    .cloud-store-img { width: 130%; margin-top: var(--indent-2); }
 }
