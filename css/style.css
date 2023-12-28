@@ -1548,6 +1548,7 @@ img {
 .legal {
     font-size: var(--text-size-6);
     margin-top: var(--indent-2);
+    margin-bottom: 0;
 }
 .legal a { color: var(--text-color); text-decoration-style: dotted; text-underline-offset:0.2rem; }
 
