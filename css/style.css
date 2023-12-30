@@ -1566,7 +1566,7 @@ img {
 
 .price {
     background-color: #0D6EFD;
-    /* width: 22rem; */
+    width: 25rem;
     background-color: var(--main-bg-color);
     padding: var(--indent-3);
     border-radius: var(--border-radius-img);
@@ -1579,6 +1579,7 @@ img {
     font-weight: 400;
 }
 .price-descr { background-color: rgb(251, 251, 251); padding-bottom: var(--indent-1); }
+p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bottom: 0; }
 .price-descr h2 { 
     margin: 0;
     padding: var(--indent-1) 0 var(--indent-1);
@@ -1620,7 +1621,7 @@ img {
         padding: 1rem 1.2rem;
     }
 }
-
+@media (max-width: 640px) { .price { width: 30rem; } }
 @media (max-width: 590px) {
     .cloud { display: unset; }
     .cloud-store-img-block { overflow: hidden; }
