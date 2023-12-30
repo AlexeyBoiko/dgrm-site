@@ -1611,7 +1611,12 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
     width: 40rem;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 640px) { .price { width: 30rem; } }
+@media (max-width: 590px) {
+    .cloud { display: unset; }
+    .cloud-store-img-block { overflow: hidden; }
+    .cloud-store-img { width: 130%; margin-top: var(--indent-2); }
+
     .price {
         width: 100%;
         margin-left: var(--indent-3);
@@ -1620,10 +1625,4 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
     .price .btn {
         padding: 1rem 1.2rem;
     }
-}
-@media (max-width: 640px) { .price { width: 30rem; } }
-@media (max-width: 590px) {
-    .cloud { display: unset; }
-    .cloud-store-img-block { overflow: hidden; }
-    .cloud-store-img { width: 130%; margin-top: var(--indent-2); }
 }
