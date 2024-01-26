@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DGRM - Flowchart editor</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="description"
+        content="Flowchart editor. Fast, no unnecessary buttons. Supports workflow charts, activity diagrams, sequence diagrams, mind maps." />
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 16px;
+            color: rgb(52,71,103);
+            background-color: rgb(251, 251, 251);
+        }
+        a { color: #0D6EFD; text-decoration: none; }
+        .modal {
+            position: fixed;
+            left: 50%;
+            top: 30%;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 24px;
+            border-radius: 8px;
+            background-color: rgb(255, 255, 255);
+            transform: translate(-50%, -30%);
+
+            display: flex; flex-flow: column; padding: 15px;
+            width: 85vw;
+            max-width: 220px;
+        }
+        .mb20 { margin-bottom: 20px }
+        .tc { text-align: center; }
+        .sp { border-bottom: solid rgba(52,71,103,.4) 1px; margin-bottom: 10px; padding-bottom: 20px; }
+    </style>
+</head>
+
+<body>
+    <img src="https://mc.yandex.ru/watch/94193297" style="position:absolute; left:-9999px;" alt="metric" />
+    <div class="modal">
+        <div class="mb20 tc" style="font-weight: bold;">Activate account</div>
+        <div class="mb20 tc"><a href="/en/price.html">Select subscription here</a></div>
+        <div class="mb20">
+            If you just paid for your subscription, wait 5 minutes and <a href="https://oauth.yandex.ru/authorize?response_type=code&client_id=97eecc7396ca470bb10e92b12f11bab8&force_confirm=yes">log in</a> again.
+        </div class="mb20">
+        <div class="sp">
+            Support<br />contact@dgrm.net
+        </div>
+        <div>
+            <small>Or continue to use the editor without registration. <a href="https://app.dgrm.net/">Open editor</a>.</small>
+        </div>
+    </div>
+</body>
+
+</html>

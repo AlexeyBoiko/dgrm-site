@@ -54,6 +54,7 @@
 						<p class="price-head">Облачное хранилище</p>
 						<p class="price-price">270 ₽ <span>в месяц</span></p>
 						<a href="javascript:alert('Сейчас все возможности бесплатно.');" class="btn btn_primary" data-floating-btn>Купить подписку</a>
+						<!--<a href="javascript:p();" class="btn btn_primary" data-floating-btn>Купить подписку</a>-->
 						<ul>
 							<li>Все функции редактора</li>
 							<li>Онлайн совещания</li>
@@ -147,5 +148,62 @@
 			<p class="legal">ИНН 500110586920 Бойко А. С. <br /><a href="./terms-of-use.pdf" target="_blank" rel="nofollow" rel="nofollow">Пользовательское соглашение</a>.</p>
 		</div>
 	</footer>
+	<div class="fade" id="fade" style="display: none;">
+		<style>
+			.fade {
+				position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index:1;
+				background-color: rgba(242, 242, 242, .5);
+			}
+			.modal {
+				font-size: var(--text-size-5);
+				position: fixed;
+				left: 50%;
+				top: 30%;
+				box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 24px;
+				border-radius: 8px;
+				padding: var(--indent-3);
+    			border-radius: var(--border-radius-img);
+				background-color: rgb(255, 255, 255);
+				transform: translate(-50%, -30%);
+				display: flex; flex-flow: column;
+				width: 85vw;
+				max-width: 30rem;
+			}
+			.a { color: var(--primary-color); text-decoration: none; cursor: pointer; }
+			.mb20 { margin-bottom: 1.5rem; }
+			.modal .bt {
+				cursor: pointer;
+				color: #0d6efd;
+				padding: 0.8rem 1rem;
+				border-radius: 0.625rem;
+				border: none;
+				background-color: #f2f2f2;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+			}
+		</style>
+		<div class="modal">
+			<div class="mb20"><a class="a" href="javascript:ph();">Закрыть</a></div>
+			<div class="mb20">
+				<p>Войдите под учетной записью для которой покупаете подписку.</p>
+				<p>После входа вы будете перенаправлены на страницу оплаты.</p>
+			</div>
+			<div><a href="https://oauth.yandex.ru/authorize?response_type=code&client_id=97eecc7396ca470bb10e92b12f11bab8&force_confirm=yes&redirect_uri=https://api.dgrm.net/api/login/yp" class="bt"><svg width="24" height="24" fill="none" style="margin-right:5px"><path d="M2.04 12c0-5.523 4.476-10 10-10 5.522 0 10 4.477 10 10s-4.478 10-10 10c-5.524 0-10-4.477-10-10z" fill="#FC3F1D"></path><path d="M13.32 7.666h-.924c-1.694 0-2.585.858-2.585 2.123 0 1.43.616 2.1 1.881 2.959l1.045.704-3.003 4.487H7.49l2.695-4.014c-1.55-1.111-2.42-2.19-2.42-4.015 0-2.288 1.595-3.85 4.62-3.85h3.003v11.868H13.32V7.666z" fill="#fff"></path></svg>  Войти с Яндекс</a></div>
+		</div>
+	</div>
+	<script>
+		window.ph = function() { 
+			document.getElementById('fade').style.display = "none";
+		}
+		window.p = function(){
+			const m = document.getElementById('fade');
+			m.onclick = function(evt) {
+				if(m === evt.target) { window.ph(); }
+			};
+			m.style.display = "unset";
+		}
+	</script>
 </body>
 </html>
