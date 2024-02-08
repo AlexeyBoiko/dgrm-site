@@ -1600,22 +1600,23 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
 }
 .cloud {
     display: grid;
-    grid-gap: var(--indent-3);
+    grid-gap: var(--indent-1);
     grid-template-columns: 1fr 1fr;
 }
 .cloud .section .description {
     margin-block-end: var(--indent-2);
 }
 
-.cloud-store-img {
-    width: 40rem;
-}
+.cloud-store-img { width: 20rem; }
+.cloud-files-img { width: 30rem; }
 
 @media (max-width: 640px) { .price { width: 30rem; } }
 @media (max-width: 590px) {
     .cloud { display: unset; }
-    .cloud-store-img-block { overflow: hidden; }
-    .cloud-store-img { width: 130%; margin-top: var(--indent-2); }
+    .cloud-store-file_select {padding-top: var(--indent-1);}
+    /* .cloud-store-img-block { overflow: hidden; }
+    .cloud-store-img { width: 130%; margin-top: var(--indent-2); } */
+    .cloud-store-img, .cloud-files-img { display: block; margin-left: auto; margin-right: auto; }
 
     .price {
         width: 100%;
