@@ -1610,6 +1610,8 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
 .cloud-store-img { width: 20rem; }
 .cloud-files-img { width: 30rem; }
 
+.cloud-file-header2 { display: none; }
+
 @media (max-width: 640px) { .price { width: 30rem; } }
 @media (max-width: 590px) {
     .cloud { display: unset; }
@@ -1617,6 +1619,9 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
     .cloud-store-img, .cloud-files-img { display: block; margin-left: auto; margin-right: auto; max-width: 100%; }
     .cloud-store-img { width: 35rem; }
     .cloud-files-img { width: 45rem; }
+
+    .cloud-file-header2 { display: unset; }
+    .cloud-file-header1 { display: none; }
 
     .price {
         width: 100%;
