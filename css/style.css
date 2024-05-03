@@ -1607,8 +1607,8 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
     margin-block-end: var(--indent-2);
 }
 
-.cloud-store-img { width: 20rem; }
-.cloud-files-img { width: 30rem; }
+.cloud-store-img { width: 16rem; box-shadow: var(--box-shadow-img); border-radius: var(--border-radius-img); margin-left: 4rem; display: block;}
+.cloud-files-img { width: 30rem; box-shadow: var(--box-shadow-img); border-radius: var(--border-radius-img); }
 
 .cloud-file-header2 { display: none; }
 
@@ -1617,7 +1617,7 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
     .cloud { display: unset; }
     .cloud-store-file_select {padding-top: var(--indent-1);}
     .cloud-store-img, .cloud-files-img { display: block; margin-left: auto; margin-right: auto; max-width: 100%; }
-    .cloud-store-img { width: 35rem; }
+    .cloud-store-img { width: 25rem; }
     .cloud-files-img { width: 45rem; }
 
     .cloud-file-header2 { display: unset; }
