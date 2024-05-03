@@ -1635,7 +1635,7 @@ p.price-comment { font-size: var(--text-size-6); margin-top: 1.5rem; margin-bott
     .cloud-store-img, .cloud-files-img { display: block; margin-left: auto; margin-right: auto; max-width: 100%; }
     .cloud-store-img { width: 25rem; }
     .cloud-files-img { width: 45rem; }
-    .price-cancel-img { transform: translate(4rem, 1rem); width: 87rem; max-width: 87rem; }
+    .price-cancel-img { transform: translate(0.5rem, 1rem); width: 65rem; max-width: 65rem; }
 
     .cloud-file-header2 { display: unset; }
     .cloud-file-header1 { display: none; }
