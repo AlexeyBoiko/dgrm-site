@@ -1094,7 +1094,7 @@ img {
     box-shadow: var(--box-shadow-img);
     border-start-start-radius: var(--border-radius-img);
     inset-inline-end: -2rem;
-    inset-block-end: -7rem;
+    inset-block-end: -5rem;
 }
 
 @media (max-width: 1024px) {
