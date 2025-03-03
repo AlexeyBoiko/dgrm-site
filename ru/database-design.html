@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sequence diagram | DGRM</title>
+    <title>Инструмент проектирования баз данных | DGRM</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../css/style.css?v=20240906">
-    <link rel="alternate" hreflang="ru" href="../ru/sequence-diagram.html" />
-    <link rel="alternate" hreflang="x-default" href="../en/sequence-diagram.html" />
+    <link rel="alternate" hreflang="en" href="../en/database-design.html" />
+    <link rel="alternate" hreflang="x-default" href="../en/database-design.html" />
     <meta name="description"
-        content="Complex interactions can be represented in a visual sequence diagram." />
+        content="Инструмент для проектирования баз данных." />
 </head>
 <body>
 	<img src="https://mc.yandex.ru/watch/94193297" style="position:absolute; left:-9999px;" alt="metric" />
@@ -19,73 +19,56 @@
 		<div class="container">
 			<nav class="navigation">
 				<a href="./" class="link link_without-arrow me-auto"><span class="logo"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12.8995 6.85431L17.1421 11.0969L7.24264 20.9964H3V16.7538L12.8995 6.85431ZM14.3137 5.44009L16.435 3.31877C16.8256 2.92825 17.4587 2.92825 17.8492 3.31877L20.6777 6.1472C21.0682 6.53772 21.0682 7.17089 20.6777 7.56141L18.5563 9.68273L14.3137 5.44009Z" fill="rgba(13,110,253,1)"></path></svg>DGRM</span></a>
-				<a href="./price.html" class="link link_without-arrow link-txtcolor"><span>Prices</span></a>
+				<a href="./price.html" class="link link_without-arrow link-txtcolor"><span>Цены</span></a>
 				<div class="lang-switcher">
 					<input type="checkbox" id="lang-switcher-checkbox">
-					<label class="lang-select" for="lang-switcher-checkbox">EN <span class="dropdown-arrow"></span></label>
+					<label class="lang-select" for="lang-switcher-checkbox">RU <span class="dropdown-arrow"></span></label>
 					<ul class="lang-list">
-						<li><a href="" rel="alternate" hreflang="en" class="lang-item current">EN</a></li>
-						<li><a href="../ru/sequence-diagram.html" class="lang-item">RU</a></li>
+						<li><a href="../en/database-design.html" rel="alternate" hreflang="en" class="lang-item">EN</a></li>
+						<li><a href="" class="lang-item current">RU</a></li>
 					</ul>
 				</div>
-				<a href="https://app.dgrm.net/" target="_blank" class="btn btn_primary" data-floating-btn>Open editor</a>
+				<a href="https://app.dgrm.net/" target="_blank" class="btn btn_primary" data-floating-btn>Открыть редактор</a>
 			</nav>
 		</div>
 	</header>
 	<main class="bg-solid">
 		<section class="container feature-head feature-section">
 			<div class="feature-description">
-				<h1 class="h2">Clear sequence diagram editor</h2>
+				<h1 class="h2">Инструмент для проектирования баз данных</h2>
 				<div class="description">
-					Visualize interactions between systems using sequence diagrams. Complex interactions can be represented in a visual sequence diagram. The diagram can be discussed with a colleague and inserted into documentation.
+					Ускорьте разработку программ с помощью онлайн редактора схем баз данных. Работайте индивидуально или в команде.
 				</div>
-				<a href="https://app.dgrm.net/" target="_blank" class="btn btn_primary">Draw a sequence diagram</a>
-				<p class="description-free">Free. No registration required.</p>
+				<a href="https://app.dgrm.net/" target="_blank" class="btn btn_primary">Нарисовать схему базы данных</a>
+				<p class="description-free">Бесплатно, без регистрации</p>
 			</div>
 			<div>
 				<figure>
                     <picture>
-                        <source srcset="../img/sequence-diagram/upload-sequence-diagram.png 1x, ../img/sequence-diagram/upload-sequence-diagram-x2.png 2x, ../img/sequence-diagram/upload-sequence-diagram-x3.png 3x" type="image/png">
-                        <img src="../img/sequence-diagram/upload-sequence-diagram.png" alt="UDP file upload sequence diagram">
+                        <source srcset="../img/database-design/database-schema.png 1x, ../img/database-design/database-schema-x2.png 2x, ../database-design/database-schema-x3.png 3x" type="image/png">
+                        <img src="../img/sequence-diagram/upload-sequence-diagram.png" alt="Схема базы данных">
                     </picture>
                     <figcaption>
-                        <a href="https://app.dgrm.net/?k=202403808ba09f" target="_blank" class="link"><span>UDP file upload sequence diagram</span></a>
+                        <a href="https://app.dgrm.net/?k=202503c1b2ef7a" target="_blank" class="link"><span style="max-width: 300px; display: inline-block;">
+							Схема базы данных
+						</span></a>
                     </figcaption>
                 </figure>
 			</div>
 		</section>
 		<div class="feature-main">
 			<div class="container">
-				<section class="feature-section" style="margin-bottom: var(--indent-2);">
-					<div class="feature-description">
-						<h2 class="h3">Speed ​​up development with visualization</h2>
-						<div class="description">
-							A sequence diagram clearly shows how the components of a system interact. This allows you to design the system faster and find better solutions.
-						</div>
-					</div>
-					<div>
-						<figure>
-							<picture>
-								<source srcset="../img/sequence-diagram/connection-sequence-diagram.png 1x, ../img/sequence-diagram/connection-sequence-diagram-x2.png 2x, ../img/sequence-diagram/connection-sequence-diagram-x3.png 3x" type="image/png">
-								<img src="../img/sequence-diagram/connection-sequence-diagram.png" alt="WebRTC connection sequence diagram">
-							</picture>
-							<figcaption>
-								<a href="https://app.dgrm.net/?k=2024089d67c1aa" target="_blank" class="link"><span>WebRTC connection sequence diagram</span></a>
-							</figcaption>
-						</figure>
-					</div>
-				</section>
 				<section class="feature-section">
 					<div class="feature-description">
-						<h2 class="h3">Show your colleagues how your system works</h2>
+						<h2 class="h3">Быстрее решайте задачи за счет визуализации</h2>
 						<div class="description">
-							A sequence diagram will help you explain to your colleagues how the system works. You will save time and better communicate your ideas to your team.
+							На схеме базы данных хорошо видны объекты системы и их связи. За счет визуализации вы ускорите разработку и найдете лучшие решения.
 						</div>
 					</div>
 					<div class="feature-description" style="padding-bottom: 0;">
-						<h2 class="h3">Keep your documentation up to date with an online diagram</h2>
+						<h2 class="h3">Улучшите командную работу</h2>
 						<div class="description">
-							Share a link to your sequence diagram with your colleagues so that everyone has the latest information. You can give access to specific colleagues or publish the sequence diagram to everyone.
+							Схемы баз данных помогут быстрее и лучше донести информацию коллегам. Работайте над схемами баз данных вместе с коллегами. Вставляйте схемы в документацию.
 						</div>
 					</div>
 				</section>
@@ -94,12 +77,13 @@
 		<section class="promo">
 			<div class="promo-content">
 				<h3 class="promo-heading" id="totally-free">
-					<strong>Free, <br />no registration required</strong>
+					<strong>Бесплатно,<br>
+						без регистрации</strong>
 				</h3>
-	
-				<p class="promo__description description">Start using editor free and without registering.</p>
+				<p class="promo__description description">Начните использовать редактор
+					бесплатно и без регистрации.</p>
 				<div class="promo__action">
-					<a href="https://app.dgrm.net/" target="_blank" class="btn btn_primary promo-btn">Open editor</a>
+					<a href="https://app.dgrm.net/" target="_blank" class="btn btn_primary promo-btn">Открыть редактор</a>
 				</div>
 			</div>
 		</section>
@@ -107,23 +91,23 @@
 	<footer class="footer container">
 		<div>
 			<div>
-				<h4 class="footer-heading">Features</h4>
+				<h4 class="footer-heading">Возможности</h4>
 				<ul>
-					<li><a href="flowchart.html" class="link link_without-arrow text-nowrap"><span>Flowcharts</span></a></li>
-					<li><a href="mind-map.html" class="link link_without-arrow text-nowrap"><span>Mind maps</span></a></li>
-					<li><a href="sequence-diagram.html" class="link link_without-arrow text-nowrap"><span>Sequence diagrams</span></a></li>
-					<li><a href="database-design.html" class="link link_without-arrow text-nowrap"><span>Database design</span></a></li>
+					<li><a href="flowchart.html" class="link link_without-arrow text-nowrap"><span>Блок-схемы</span></a></li>
+					<li><a href="mind-map.html" class="link link_without-arrow text-nowrap"><span>Интеллект-карты</span></a></li>
+					<li><a href="sequence-diagram.html" class="link link_without-arrow text-nowrap"><span>Диаграммы последовательности</span></a></li>
+					<li><a href="database-design.html" class="link link_without-arrow text-nowrap"><span>Проектирование баз данных</span></a></li>
 				</ul>
 			</div>
 			<div>
-				<h4 class="footer-heading" style="margin-top: var(--indent-2)">Instructions</h4>
-				<a href="hints.html" class="link link_without-arrow text-nowrap"><span>Video hints, hotkeys</span></a>
+				<h4 class="footer-heading" style="margin-top: var(--indent-2)">Инструкции</h4>
+				<a href="hints.html" class="link link_without-arrow text-nowrap"><span>Видео подсказки, горячие клавиши</span></a>
 			</div>
 		</div>
 		<div>
-			<p class="footer-heading">Editor is developing</p>
-			<p class="footer-description">New features are being implemented. <br>
-				Announcements are posted on Twitter and Telegram.</p>
+			<p class="footer-heading">Редактор развивается</p>
+			<p class="footer-description">Появляются новые возможности. <br>
+				Анонсы в Twitter и Telegram.</p>
 			<ul>
 				<li class="footer-contact">
 					<a class="footer-contact__link" href="https://t.me/dgrm_net">
@@ -177,7 +161,7 @@
 					</a>
 				</li>
 			</ul>
-			<p class="legal">TIN 500110586920 Boyko A. S. <br /><a href="../ru/terms-of-use.pdf" target="_blank" rel="nofollow">Terms of use</a>.</p>
+			<p class="legal">ИНН 500110586920 Бойко А. С. <br /><a href="./terms-of-use.pdf" target="_blank" rel="nofollow" rel="nofollow">Пользовательское соглашение</a>.</p>
 		</div>
 	</footer>
 </body>
