@@ -1607,7 +1607,13 @@ img {
     margin-top: var(--indent-2);
     margin-bottom: 0;
 }
-.legal a { color: var(--text-color); text-decoration-style: dotted; text-underline-offset:0.2rem; }
+.legala { color: var(--text-color); text-decoration-style: dotted; text-underline-offset:0.2rem; }
+
+.pay {
+    margin-top: var(--indent-2);
+    display: grid; grid-gap: var(--indent-3); grid-template-columns: 1fr 1fr 1fr;
+}
+.pay img { width: 8rem; }
 
 .logo { display: flex; align-items: center; }
 .logo svg { margin-right: 0.25rem; }
